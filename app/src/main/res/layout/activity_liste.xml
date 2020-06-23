@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ListeActivity">
+
+    <RelativeLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="#333333"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/tvNomPrenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="User"
+            android:layout_toEndOf="@id/imgProfil"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/Titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="LISTE DES ETARES"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:fontFamily="@font/roboto_bold" />
+
+        <ImageView
+            android:id="@+id/imgDeconnexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/tvDeconnexion"
+            app:srcCompat="@drawable/stand_by" />
+
+        <TextView
+            android:id="@+id/tvDeconnexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:text="Deconnexion"
+            android:layout_alignParentEnd="true"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_liste_ETARE"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/Header"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_liste_etare"
+            android:layout_width="match_parent"
+            android:text="Liste des ETARES"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/navigation_menu"/>
+        <Button
+            android:id="@+id/btn_creation_etare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Création d'un ETARE"
+            android:background="@drawable/navigation_menu"/>
+        <Button
+            android:id="@+id/btn_admin_users"
+            android:layout_width="match_parent"
+            android:text="Administration Utilisateurs"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/navigation_menu"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btn_admin_etare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Administration ETARE"
+            android:visibility="gone"
+            android:background="@drawable/navigation_menu"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_search_filtre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/menu_liste_ETARE">
+
+        <SearchView
+            android:background="@drawable/edittext_border_color"
+            android:id="@+id/searchview_liste"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_filtre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Ajouter un filtre "
+            android:gravity="center"
+            android:layout_marginEnd="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_filtre"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_header_liste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_search_filtre"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EAEAEA"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Nom"/>
+        <TextView
+            android:id="@+id/tv_commune"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Commune"/>
+        <TextView
+            android:id="@+id/tv_groupement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Groupement"/>
+        <TextView
+            android:id="@+id/tv_date_creation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+
+            android:layout_weight="1"
+            android:text="Date de création"/>
+        <TextView
+            android:id="@+id/tv_date_modification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+
+            android:layout_weight="1"
+            android:text="Date de dernière modification"/>
+        <TextView
+            android:id="@+id/tv_niveau_ETARE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+
+            android:layout_weight="1"
+            android:text="Niveau ETARE"/>
+        <TextView
+            android:id="@+id/tv_statut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Statut"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_etare"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_header_liste"
+        android:layout_alignLeft="@id/layout_header_liste"
+        android:layout_alignRight="@id/layout_header_liste"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

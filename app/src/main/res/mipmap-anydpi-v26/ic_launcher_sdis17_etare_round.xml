@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by foucaudA on 12/6/2020
+  ~ Last modified 12/06/20 11:47
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_launcher_sdis17_etare_background"/>
+    <foreground android:drawable="@mipmap/ic_launcher_sdis17_etare_foreground"/>
+</adaptive-icon>

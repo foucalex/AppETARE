@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:id="@+id/layout_item_accessSpot"
+    android:background="@drawable/edittext_border_color">
+
+    <TextView
+        android:id="@+id/tv_acces_item_acces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acces"
+        android:textSize="11sp" />
+
+    <EditText
+        android:id="@+id/et_acces_item_acces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/edittext_border_color"
+        android:singleLine="true"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_commentaire_item_acces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/commentaire"
+            android:textSize="11sp" />
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/et_commentaire_item_acces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border_color"
+        android:singleLine="true"
+        android:textSize="11sp" />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">AppETARE</string>
+    <string name="nom">Nom</string>
+    <string name="fonction">Fonction</string>
+    <string name="telephone_fixe">Téléphone (fixe)</string>
+    <string name="telephone_portable">Téléphone (portable)</string>
+    <string name="email">Email</string>
+    <string name="acces">Accès</string>
+    <string name="commentaire">Commentaire</string>
+    <string name="adresse">Adresse</string>
+    <string name="commune">Commune</string>
+    <string name="groupement">Groupement</string>
+    <string name="nom_de_l_etare">Nom de l\'ETARE</string>
+    <string name="les_informations_g_n_rales">Les informations générales</string>
+    <string name="cr_ation_d_un_etare">Création d\'un ETARE</string>
+    <string name="liste_des_etares">Liste des ETARES</string>
+    <string name="bloc_note">Bloc Note</string>
+    <string name="creation_d_un_etare">CREATION D\'UN ETARE</string>
+    <string name="user">User</string>
+    <string name="image_de_profil">Image de profil</string>
+    <string name="acc_s">Accès</string>
+    <string name="image_plans">image plans</string>
+    <string name="les_plans">Les plans</string>
+    <string name="plans_d_ensemble">Plans d\'ensemble</string>
+    <string name="plans_par_batiment">Plans par batiment</string>
+    <string name="plans_par_niveau">Plans par niveau</string>
+    <string name="choisir_fichier">Choisir fichier</string>
+    <string name="aucun_fichier_choisi">Aucun fichier choisi</string>
+    <string name="image_personne">image personne</string>
+    <string name="les_personnes_en_charge_de_la_visite">Les personnes en charge de la visite</string>
+    <string name="image_plus_btn">image_plus_btn</string>
+    <string name="personne">Personne</string>
+    <string name="image_docs">image docs</string>
+    <string name="les_documents_li_s">Les documents liés</string>
+    <string name="documents_compl_mentaires">Documents complémentaires</string>
+    <string name="creer_l_etare">CREER L\'ETARE</string>
+    <string name="image_infos">image infos</string>
+    <string name="niveau_etare">Niveau Etare</string>
+
+    <string-array name="groupement">
+        <item>Nord-Ouest</item>
+        <item>Nord-Est</item>
+        <item>Sud-Est</item>
+        <item>Sud-Ouest</item>
+    </string-array>
+
+    <string-array name="niveau_etare">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+
+</resources>

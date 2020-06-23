@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ConnaissanceLieuActivity">
+
+    <RelativeLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="#333333"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/tvNomPrenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="User"
+            android:layout_toEndOf="@id/imgProfil"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/Titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:text="CONNAISSANCE DU LIEU"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:fontFamily="@font/roboto_bold"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/btn_appareil_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/imageButton3"
+            android:background="#333333"
+            android:text="Appareil Photo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:background="#333333"
+            android:layout_toStartOf="@+id/btn_bloc_note"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <Button
+            android:id="@+id/btn_bloc_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/imageButton2"
+            android:background="#333333"
+            android:text="Bloc Note"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="#333333"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/btn_sauvegarder"
+            android:src="@drawable/document" />
+
+        <Button
+            android:id="@+id/btn_sauvegarder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/imgSauvegarder"
+            android:background="#333333"
+            android:text="Sauvegarder \net Quitter"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/imgSauvegarder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_save"
+            android:background="#333333"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/Header"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_info_gene"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Informations\nGénérales"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_connaissance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Connaissance\ndu Lieu"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_moyens_de_secours"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Moyens de Secours"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_dangers"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Dangers"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_acces"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Accès"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_priorite"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Priorité de\nSauvegarde"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_analyse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Analyse des\nRisques"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_consignes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Consignes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_media"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Médias"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_corps_connaissance_lieu"
+        android:layout_below="@id/menu_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activité du lieu"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"/>
+
+            <EditText
+                android:id="@+id/et_activity_location"
+                android:background="@drawable/edittext_border_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:maxHeight="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginStart="50dp"
+                android:hint="ex: ERP, Industrie, Habitation..."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Infrastructure"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"/>
+
+            <EditText
+                android:id="@+id/et_infrastructure_location"
+                android:background="@drawable/edittext_border_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:maxHeight="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginStart="50dp"
+                android:hint="ex: Bâtimentaire, lieu du PCC, lieu du PRV..."/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Effectifs"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"/>
+
+            <EditText
+                android:id="@+id/et_capacity_location"
+                android:background="@drawable/edittext_border_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:maxHeight="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginStart="50dp"
+                android:hint="ex: nombre d'employé jour/nuit, personnes alitées, capacité des dortoirs..."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motif de classement"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"/>
+
+            <EditText
+                android:id="@+id/et_classification_reason"
+                android:background="@drawable/edittext_border_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:maxHeight="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginStart="50dp"
+                android:hint="Pourquoi le bâtiment doit être classé en tant qu'ETARE"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="10dp"
+       android:orientation="vertical"
+       android:layout_below="@id/layout_corps_connaissance_lieu">
+
+       <LinearLayout
+           android:id="@+id/layout_title_personne_intervention"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_vertical">
+
+           <ImageView
+               android:id="@+id/img_personne_intervention"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="5dp"
+               android:layout_marginEnd="10dp"
+               app:srcCompat="@drawable/user_1" />
+
+           <TextView
+               android:id="@+id/label_personne_intervention"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="5dp"
+               android:gravity="center_vertical"
+               android:text="Personnes à contacter en cas d'intervention"
+               android:textSize="18sp"
+               android:textColor="#000000"/>
+       </LinearLayout>
+       <LinearLayout
+           android:id="@+id/liste_personnes_intervention"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginStart="5dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:layout_marginEnd="5dp"
+           android:gravity="bottom">
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginStart="20dp"
+               android:layout_weight="1">
+
+           </androidx.recyclerview.widget.RecyclerView>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginStart="10dp"
+               android:layout_weight="0"
+               android:background="#525252">
+
+               <ImageButton
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/plus"
+                   android:background="#525252"/>
+               <Button
+                   android:layout_width="80dp"
+                   android:layout_height="match_parent"
+                   android:text="Personne"
+                   android:textColor="#FFFFFF"
+                   android:background="#525252"/>
+
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</RelativeLayout>

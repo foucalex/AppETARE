@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="sdis.projet.app.etare">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_sdis17_etare"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_sdis17_etare_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="LockedOrientationActivity">
+
+        <activity
+            android:name=".activity.InformationsActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name=".activity.ConnaissanceLieuActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AnalyseRisqueActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.ConsignesActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.PrioriteActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.MediaActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AccesActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name=".activity.DangersActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.MoyenDeSecoursActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.admin.EtareManagementActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.admin.UserManagementActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.CreationActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name=".activity.ListeActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
